@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Checkout - Vizilume</title>
+    <link rel="stylesheet" href="check.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Vizilume</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="freelancers.html">Hire Freelancers</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Checkout Section -->
+    <section class="checkout">
+        <h1>Complete Your Order</h1>
+        <p>Provide your details and make the payment to proceed with your service request.</p>
+
+        <form id="checkout-form">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" placeholder="Enter your full name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <label for="service">Selected Service:</label>
+            <select id="service" required>
+                <option value="website">Website Development</option>
+                <option value="app">App Development</option>
+                <option value="uiux">UI/UX Design</option>
+            </select>
+
+            <label for="payment">Payment Method:</label>
+            <h5 style="color: black;">UPI ID : abcde</h5>
+            <!-- <strong>UPI Id : abcd</strong> -->
+            <!-- <select id="payment" required>
+                <option value="credit">Credit Card</option>
+                <option value="paypal">PayPal</option>
+                <option value="upi">UPI</option>
+            </select> -->
+
+            <button type="submit">Proceed to Payment</button>
+        </form>
+    </section>
+
+    <!-- Success Message (Hidden Initially) -->
+    <div class="success-message" id="success-message">
+        <h2>Thank You for Choosing Vizilume!</h2>
+        <p>Your payment has been successfully processed. Our team will contact you soon.</p>
+        <a href="index.html" class="btn">Go to Homepage</a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Vizilume. All Rights Reserved.</p>
+    </footer>
+
+    <script src="check.js"></script>
+</body>
+</html>
